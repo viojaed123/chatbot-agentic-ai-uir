@@ -42,8 +42,6 @@ const el = {
   historyCount: document.getElementById('history-count'),
   statusWrap: document.getElementById('status-wrap'),
   statusValue: document.getElementById('status-value'),
-  modelLabel: document.getElementById('model-label'),
-  modeLabel: document.getElementById('mode-label'),
   topbarModel: document.getElementById('topbar-model'),
 };
 
@@ -166,20 +164,10 @@ async function periksaKesehatan() {
     const model = data.model_api || data.model
       || (penyedia === 'ollama' ? 'hermes3:8b' : 'deepseek-v4.1-flash:free');
 
-    if (el.modelLabel) el.modelLabel.textContent = model;
     if (el.topbarModel) el.topbarModel.textContent = model;
-    const agentRuntime = data.agent_runtime === 'hermes' ? 'Hermes Agent' : 'Internal';
-    if (el.modeLabel) {
-      const dasar = penyedia === 'tokenharbor'
-        ? 'TokenHarbor'
-        : (penyedia === 'deepseek' ? 'DeepSeek API' : 'Ollama rollback');
-      el.modeLabel.textContent = agentRuntime === 'Hermes Agent'
-        ? `${dasar} · Hermes`
-        : dasar;
-    }
 
     if (data.ok && data.model_tersedia) {
-      setStatus(`Siap: ${model} · ${agentRuntime}`, 'ok');
+      setStatus('Siap', 'ok');
     } else if (data.ok) {
       setStatus('Model belum tersedia', 'bad');
     } else {
@@ -201,12 +189,8 @@ function perbaruiStatusDariChat(data) {
   if (!rinci || rinci.agent !== 'hermes') return;
   const model = typeof rinci.model === 'string' ? rinci.model.trim() : '';
   if (!model || String(rinci.status || '').toLowerCase() !== 'completed') return;
-  if (el.modelLabel) el.modelLabel.textContent = model;
   if (el.topbarModel) el.topbarModel.textContent = model;
-  if (el.modeLabel && !el.modeLabel.textContent.includes('Hermes')) {
-    el.modeLabel.textContent = 'TokenHarbor · Hermes';
-  }
-  setStatus(`Siap: ${model} · Hermes Agent`, 'ok');
+  setStatus('Siap', 'ok');
 }
 
 function setGalatInput(pesan) {

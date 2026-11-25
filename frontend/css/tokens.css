@@ -1,72 +1,104 @@
 :root {
-  /* Skala ruang dan tipografi (dipertahankan agar komponen lama kompatibel). */
-  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px;
-  --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px;
-  --space-3xl: 96px; --space-4xl: 144px;
+  color-scheme: light;
 
-  --text-xs: 0.75rem; --text-sm: 0.8125rem; --text-md: 1rem;
-  --text-lg: 1.125rem; --text-xl: 1.266rem; --text-2xl: 1.424rem;
-  --text-3xl: 1.602rem; --text-4xl: 1.802rem;
-  --text-display-s: 1.266rem; --text-display: 1.602rem;
-  --text-section: 1.266rem; --text-title: 1rem; --text-lead: 1.125rem;
+  --color-paper: oklch(94.5% 0.010 76);
+  --color-paper-2: oklch(91.8% 0.013 74);
+  --color-paper-3: oklch(88% 0.015 72);
+  --color-ink: oklch(19% 0.024 52);
+  --color-ink-2: oklch(31% 0.018 54);
+  --color-muted: oklch(47% 0.014 60);
+  --color-rule: oklch(81% 0.011 70);
+  --color-accent: oklch(41% 0.075 248);
+  --color-accent-ink: oklch(96% 0.008 76);
+  --color-focus: oklch(50% 0.095 248);
+  --color-card: oklch(97.6% 0.007 82);
+  --color-card-edge: oklch(86% 0.012 72);
+  --color-pencil: oklch(52% 0.010 62);
+  --card-lit: oklch(98.4% 0.006 84);
+  --card-shade: oklch(96.4% 0.008 78);
+  --lit: oklch(99.6% 0.004 85 / 0.9);
+  --stain-1: oklch(70% 0.075 14);
+  --stain-2: oklch(66% 0.055 132);
+  --stain-3: oklch(60% 0.080 58);
+  --stain-4: oklch(68% 0.045 206);
+
+  --color-success: var(--color-accent);
+  --color-error: var(--color-ink-2);
+  --color-error-rule: var(--stain-1);
+  --color-error-soft: color-mix(in oklab, var(--stain-1) 8%, var(--color-paper));
+  --color-accent-soft: color-mix(in oklab, var(--color-accent) 8%, transparent);
+  --air-warm: oklch(97% 0.032 82 / 0.72);
+  --air-cream: oklch(95.5% 0.022 72 / 0.55);
+
+  --font-display: "Sentient", Georgia, serif;
+  --font-body: "Hanken Grotesk", system-ui, sans-serif;
+  --font-outlier: var(--font-body);
+
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)' opacity='0.22'/%3E%3C/svg%3E");
+  --fibre: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55%200.9' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23f)' opacity='0.16'/%3E%3C/svg%3E");
+
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 144px;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.1875rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+  --text-3xl: 2.375rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem);
+  --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-section: clamp(2.75rem, 3.4vw + 1.2rem, 4.75rem);
+  --text-title: 1.625rem;
+  --text-lead: clamp(1.0625rem, 0.25vw + 1rem, 1.25rem);
+
+  --tracking-display: -0.018em;
+  --tracking-statement: -0.022em;
+  --display-weight: 300;
+  --statement-weight: 300;
+  --serif-small: 400;
+
+  --radius-card: 2px;
+  --radius-pill: 3px;
+  --rule-hair: 1px;
+  --rule-head: 1px;
+  --shadow-card:
+    0 0 0 1px oklch(30% 0.03 55 / 0.05),
+    0.5px 1px 1px oklch(30% 0.03 55 / 0.08),
+    3px 8px 14px -6px oklch(30% 0.03 55 / 0.14),
+    14px 36px 64px -28px oklch(30% 0.03 55 / 0.3);
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --dur-micro: 140ms; --dur-short: 260ms; --dur-long: 460ms;
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 520ms;
 
-  /* Palet yang diminta pengguna. */
-  --navy-deep: #071426;
-  --navy-mid: #0B1F3A;
-  --royal: #164E9B;
-  --cyan: #39D5F2;
-  --ice: #F4FAFF;
-
-  --color-paper: var(--navy-deep);
-  --color-paper-2: var(--navy-mid);
-  --color-paper-3: #0e2949;
-  --color-brand: var(--royal);
-  --color-brand-deep: var(--navy-mid);
-  --color-ink: var(--ice);
-  --color-ink-2: rgba(244, 250, 255, 0.86);
-  --color-muted: rgba(244, 250, 255, 0.64);
-  --color-rule: rgba(244, 250, 255, 0.16);
-  --color-on-deep: var(--ice);
-  --color-on-deep-muted: rgba(244, 250, 255, 0.68);
-
-  --color-accent: var(--cyan);
-  --color-accent-soft: rgba(57, 213, 242, 0.16);
-  --color-accent-ink: var(--navy-deep);
-  --color-focus: var(--cyan);
-  --color-focus-on-deep: var(--cyan);
-  --color-error: #ff9a9a;
-  --color-success: #7de6c2;
-
-  /* Sistem kaca: transparan, tipis, satu bahasa visual. */
-  --glass-bg: rgba(255, 255, 255, 0.045);
-  --glass-bg-strong: rgba(255, 255, 255, 0.075);
-  --glass-bg-hover: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.12);
-  --glass-border-soft: rgba(255, 255, 255, 0.075);
-  --glass-highlight: rgba(255, 255, 255, 0.22);
-  --glass-shadow: 0 20px 50px rgba(2, 10, 24, 0.32);
-  --glass-shadow-sm: 0 8px 24px rgba(2, 10, 24, 0.22);
-  --glass-blur: 18px;
-  --glass-blur-sm: 10px;
-
-  --font-display: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-outlier: var(--font-display);
-
-  --container: 1440px; --gutter: 24px; --gap-columns: 20px;
-  --sidebar-w: 268px; --topbar-h: 68px; --answer-rail: 208px;
+  --container: 1440px;
   --content-max: 1180px;
-  --radius-xs: 8px; --radius-card: 14px; --radius-lg: 20px;
-  --radius-pill: 999px; --rule-hair: 1px;
-  --shadow-card: var(--glass-shadow-sm);
-  --tracking-display: -0.02em;
+  --gutter: 48px;
+  --gap-columns: 32px;
+  --sidebar-w: 300px;
+  --topbar-h: 72px;
+  --answer-rail: 260px;
 
-  --z-base: 1; --z-raised: 10; --z-dropdown: 100;
-  --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400;
-  --z-toast: 500; --z-tooltip: 600;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-sticky-nav: 300;
+  --z-scrim: 350;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
 }

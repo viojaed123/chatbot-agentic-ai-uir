@@ -13,7 +13,8 @@ tersedia sebagai rollback `AGENT_RUNTIME=internal`.
 ```text
 frontend/
   index.html                Struktur shell, Beranda, Percakapan, Tentang Sistem
-  favicon.svg               Ikon tab lokal, mencegah permintaan favicon.ico 404
+  img/uir_nonlatar.png      Lambang resmi UIR (latar transparan) untuk favicon, wordmark, dan pelat beranda
+  favicon.svg               Ikon tab lama; tidak lagi dirujuk oleh index.html
   css/tokens.css            Warna (OKLCH), font, spacing, radius
   css/base.css              Reset dan aturan dasar Hallmark
   css/style.css             Tata letak app screen, state, responsive
@@ -70,13 +71,12 @@ berisi nilai rahasia.
 - gateway terhubung tetapi belum ada inferensi live ->
   `Model belum tersedia`, `model_api=""`, `model_tersedia=false`;
 - setelah satu `POST /api/chat` berhasil dengan `detail_model` terverifikasi ->
-  `Siap: deepseek-v4.1-flash:free · Hermes Agent`.
+  status `Siap`; nama model ditampilkan terpisah di topbar.
 
 Frontend hanya mengubah status menjadi `Siap` setelah menerima `detail_model`
-dari run Hermes yang benar-benar `completed`. Label Model dan Mode diambil dari
-data API, bukan teks statis. Saat health menyertakan `agent_runtime=hermes`,
-Mode menampilkan `TokenHarbor · Hermes`; bila tidak ada field tersebut (klien
-lama/mock), Mode tetap `TokenHarbor` seperti kontrak lama.
+dari run Hermes yang benar-benar `completed`. Nama model di topbar diambil dari
+data API, bukan teks statis; label Model/Mode dan footer sidebar tidak lagi
+ditampilkan.
 
 ## Endpoint
 
@@ -203,7 +203,8 @@ pesan galat 429/5xx lebih spesifik tanpa mengubah alur render.
   tetapi belum dipakai frontend agar kontrak `POST /api/chat` tidak berubah.
 - Status `bukti_tidak_cukup` / `sumber_tidak_tersedia` adalah hasil jujur agen,
   bukan kegagalan teknis.
-- Tidak memakai logo resmi UIR, foto rekaan, metrik buatan, atau testimoni.
+- Lambang resmi UIR dipakai sebagai identitas visual; tidak memakai foto rekaan,
+  metrik buatan, atau testimoni.
 - Tombol Salin memakai Clipboard API dengan fallback `execCommand`.
 
 ## Memecahkan masalah
