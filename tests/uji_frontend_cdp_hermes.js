@@ -157,8 +157,7 @@ async function kirimEnter(halaman, teks) {
 
     const awal = await halaman.evaluasi(`(() => ({
       status: document.getElementById('status-value').textContent,
-      model: document.getElementById('model-label').textContent,
-      mode: document.getElementById('mode-label').textContent,
+      model: document.getElementById('topbar-model').textContent,
       health: (window.__bukti.health[0] || null),
     }))()`);
     catat(
@@ -167,10 +166,10 @@ async function kirimEnter(halaman, teks) {
         && awal.health.agent_runtime === 'hermes'
         && awal.health.model_tersedia === false
         && !awal.status.includes('Siap')
-        && awal.mode.includes('Hermes'),
+        && awal.model.includes('deepseek-v4.1-flash'),
       JSON.stringify({
         status: awal.status,
-        mode: awal.mode,
+        model: awal.model,
         agent_runtime: awal.health && awal.health.agent_runtime,
         model_tersedia: awal.health && awal.health.model_tersedia,
       })
@@ -192,8 +191,7 @@ async function kirimEnter(halaman, teks) {
         jawaban_api: typeof d.jawaban === 'string' ? d.jawaban : '',
         teks_ui: jawaban ? jawaban.innerText : '',
         status_ui: document.getElementById('status-value').textContent,
-        model_ui: document.getElementById('model-label').textContent,
-        mode_ui: document.getElementById('mode-label').textContent,
+        model_ui: document.getElementById('topbar-model').textContent,
         session_id: (typeof state !== 'undefined' && state.sessionId) || null,
       };
     })()`);
@@ -236,13 +234,10 @@ async function kirimEnter(halaman, teks) {
     catat(
       'Status UI berubah setelah inferensi live',
       bukti.status_ui.includes('Siap')
-        && bukti.status_ui.includes('Hermes Agent')
-        && bukti.model_ui.includes('deepseek-v4.1-flash')
-        && bukti.mode_ui.includes('Hermes'),
+        && bukti.model_ui.includes('deepseek-v4.1-flash'),
       JSON.stringify({
         status: bukti.status_ui,
         model: bukti.model_ui,
-        mode: bukti.mode_ui,
       })
     );
     catat(

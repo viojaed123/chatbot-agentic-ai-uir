@@ -240,14 +240,20 @@ async function kirimEnter(halaman, teks, opsi = {}) {
     await halaman.tunggu("(() => { const t = document.getElementById('status-value').textContent; return t.length > 0 && !t.includes('Memeriksa'); })()");
 
     const statusAwal = await halaman.evaluasi("document.getElementById('status-value').textContent");
-    const labelAwal = await halaman.evaluasi("document.getElementById('model-label').textContent");
-    const modeAwal = await halaman.evaluasi("document.getElementById('mode-label').textContent");
+    const labelAwal = await halaman.evaluasi("document.getElementById('topbar-model').textContent");
+    const sisaLabel = await halaman.evaluasi(`({
+      side: Boolean(document.querySelector('.side-info')),
+      foot: Boolean(document.querySelector('.sidebar__foot')),
+      badge: Boolean(document.querySelector('.topbar__local')),
+    })`);
     catat(
       'Muat awal dan health',
-      statusAwal.includes('deepseek-v4.1-flash:free')
+      statusAwal === 'Siap'
         && labelAwal === 'deepseek-v4.1-flash:free'
-        && modeAwal === 'TokenHarbor',
-      `${statusAwal} | ${labelAwal} | ${modeAwal}`
+        && !sisaLabel.side
+        && !sisaLabel.foot
+        && !sisaLabel.badge,
+      `${statusAwal} | ${labelAwal} | ${JSON.stringify(sisaLabel)}`
     );
 
     const jawabanXss = 'Jawaban aman <img src=x onerror="window.__xss=1"> <script>window.__xss=1<\/script>';
