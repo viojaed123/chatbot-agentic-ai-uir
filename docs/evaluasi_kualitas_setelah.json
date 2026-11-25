@@ -1,0 +1,75 @@
+{
+  "ringkasan": {
+    "bukti": "docs/bukti_stabilisasi_setelah_dasar.json",
+    "jumlah": 4,
+    "lolos": 4,
+    "akurasi_persentase": 100.0,
+    "rata_url_per_jawaban": 1.5
+  },
+  "data": [
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "run_id": "run_c6361e4eb469460cbbd94d083f5d681a",
+      "panjang_jawaban": 671,
+      "url_jawaban": [
+        "https://uir.ac.id/profil/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/profil/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "run_id": "run_f2cac7e3b41f428daa251083a6d61354",
+      "panjang_jawaban": 906,
+      "url_jawaban": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "run_id": "run_1d1148df7c934f5cb7d881b8c9cc9491",
+      "panjang_jawaban": 675,
+      "url_jawaban": [
+        "https://uir.ac.id/kontak/",
+        "https://uir.ac.id/maps/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/kontak/",
+        "https://uir.ac.id/maps/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "run_id": "run_9472dbe0cf2441e5815cd161fe934f55",
+      "panjang_jawaban": 891,
+      "url_jawaban": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    }
+  ]
+}

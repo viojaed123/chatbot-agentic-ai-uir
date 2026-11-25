@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chatbot Agentic AI UIR — Asisten Informasi Universitas Islam Riau</title>
+  <meta name="description" content="Chatbot Agentic AI UIR membantu informasi Universitas Islam Riau dengan jawaban terverifikasi dari halaman publik uir.ac.id dan sumber yang dapat dibuka.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css?v=1.4.0">
+  <link rel="stylesheet" href="css/base.css?v=1.4.0">
+  <link rel="stylesheet" href="css/style.css?v=1.4.0">
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V21h13V9.5"/><path d="M9.5 21v-6h5v6"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 16-8-6 16-2.5-6.5L4 12Z"/><path d="m11.5 13.5 8.5-9.5"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
+    <symbol id="icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.1-1.1"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5.5c0 4.3 2.9 7.9 7 9.5 4.1-1.6 7-5.2 7-9.5V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></symbol>
+  </svg>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__glow ambient__glow--a"></span>
+    <span class="ambient__glow ambient__glow--b"></span>
+    <span class="ambient__glow ambient__glow--c"></span>
+  </div>
+
+  <a class="skip" href="#main">Lewati ke percakapan</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navigasi Chatbot Agentic AI UIR">
+      <div class="sidebar__head">
+        <a class="wordmark" href="#beranda" data-view="beranda" aria-label="Chatbot Agentic AI UIR, ke beranda">
+          <span class="wordmark__mark" aria-hidden="true">UIR</span>
+          <span class="wordmark__text">Chatbot Agentic AI UIR</span>
+        </a>
+        <p class="sidebar__sub">Asisten Informasi Universitas Islam Riau</p>
+      </div>
+
+      <button class="btn btn--quiet sidebar__new" type="button" id="btn-new">
+        <svg aria-hidden="true"><use href="#icon-plus"></use></svg>
+        Percakapan baru
+      </button>
+
+      <nav class="side-menu" aria-label="Menu utama">
+        <ul class="nav-list">
+          <li>
+            <button class="nav-item is-active" type="button" data-view="beranda" aria-current="page">
+              <svg aria-hidden="true"><use href="#icon-home"></use></svg>
+              Beranda
+            </button>
+          </li>
+          <li>
+            <button class="nav-item" type="button" data-view="tentang">
+              <svg aria-hidden="true"><use href="#icon-info"></use></svg>
+              Tentang Sistem
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="side-info" aria-label="Informasi model dan status">
+        <div class="side-info__row">
+          <span>Model</span>
+          <strong id="model-label">deepseek-v4.1-flash:free</strong>
+        </div>
+        <div class="side-info__row">
+          <span>Mode</span>
+          <strong><span class="status-dot" aria-hidden="true"></span><span id="mode-label">TokenHarbor</span></strong>
+        </div>
+      </section>
+
+      <section class="sidebar__history" aria-labelledby="riwayat-judul">
+        <div class="sidebar__section-head">
+          <h2 id="riwayat-judul">Riwayat sesi</h2>
+          <span class="sidebar__count" id="history-count" aria-hidden="true">0</span>
+        </div>
+        <p class="sidebar__note">Tersedia selama halaman terbuka.</p>
+        <ul class="history-list" id="history-list" aria-live="polite">
+          <li class="history-empty">Belum ada percakapan.</li>
+        </ul>
+      </section>
+
+      <footer class="sidebar__foot">
+        <p>Chatbot Agentic AI UIR <span class="sidebar__version">Versi 1.4.0</span></p>
+        <p>Inferensi melalui TokenHarbor (model DeepSeek V4.1 Flash); pencarian hanya pada halaman publik uir.ac.id.</p>
+      </footer>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button class="menu-btn" type="button" id="btn-menu" aria-controls="sidebar" aria-expanded="false" aria-label="Buka navigasi">
+          <svg aria-hidden="true"><use href="#icon-menu"></use></svg>
+        </button>
+        <div class="topbar__identity">
+          <span class="topbar__title">Chatbot Agentic AI UIR</span>
+          <span class="topbar__univ">Asisten Informasi Universitas Islam Riau</span>
+        </div>
+        <div class="topbar__spacer"></div>
+        <div class="topbar__model" id="topbar-model" aria-label="Model yang digunakan">deepseek-v4.1-flash:free</div>
+        <div class="topbar__status" id="status-wrap" role="status" aria-live="polite">
+          <span class="status__pulse" aria-hidden="true"></span>
+          <span class="status__label">Status AI</span>
+          <span class="status__value" id="status-value">Memeriksa…</span>
+        </div>
+        <div class="topbar__local" aria-label="Inferensi melalui TokenHarbor">
+          <svg aria-hidden="true"><use href="#icon-shield"></use></svg>
+          <span>TokenHarbor</span>
+        </div>
+      </header>
+
+      <main class="main" id="main">
+        <section class="view view--home" id="beranda" aria-labelledby="home-title">
+          <div class="home__intro">
+            <div>
+              <span class="home__eyebrow"><span aria-hidden="true"></span>Agentic AI · TokenHarbor · Terverifikasi</span>
+              <h1 id="home-title">Informasi UIR yang jelas dan dapat ditelusuri.</h1>
+              <p class="home__lead">Asisten Informasi Universitas Islam Riau. Jawaban disusun dari halaman publik uir.ac.id dan disertai tautan sumber yang dapat dibuka.</p>
+            </div>
+            <div class="home__action">
+              <button class="btn btn--primary" type="button" id="btn-start">Mulai bertanya</button>
+            </div>
+          </div>
+
+          <div class="home__examples" aria-labelledby="contoh-title">
+            <h2 id="contoh-title">Pertanyaan tentang UIR</h2>
+            <ul class="example-list">
+              <li><button class="example" type="button" data-question="Apa saja fakultas di Universitas Islam Riau?">Fakultas di UIR apa saja?</button></li>
+              <li><button class="example" type="button" data-question="Sebutkan program studi yang ada di UIR.">Program studi di UIR</button></li>
+              <li><button class="example" type="button" data-question="Bagaimana cara pendaftaran mahasiswa baru UIR?">Cara daftar mahasiswa baru</button></li>
+              <li><button class="example" type="button" data-question="Apa pengumuman terbaru dari Universitas Islam Riau?">Pengumuman terbaru UIR</button></li>
+            </ul>
+          </div>
+
+          <section class="categories" aria-labelledby="kategori-title">
+            <h2 id="kategori-title">Lima topik informasi UIR</h2>
+            <div class="category-grid">
+              <button class="category" type="button" data-question="Apa profil Universitas Islam Riau?">
+                <span class="category__name">Profil UIR</span>
+                <span class="category__desc">Identitas dan gambaran umum universitas.</span>
+              </button>
+              <button class="category" type="button" data-question="Sebutkan fakultas dan program studi di UIR.">
+                <span class="category__name">Fakultas dan Program Studi</span>
+                <span class="category__desc">Daftar fakultas serta program studi yang tersedia.</span>
+              </button>
+              <button class="category" type="button" data-question="Bagaimana informasi penerimaan mahasiswa baru UIR?">
+                <span class="category__name">Penerimaan Mahasiswa Baru</span>
+                <span class="category__desc">Alur dan persyaratan pendaftaran calon mahasiswa.</span>
+              </button>
+              <button class="category" type="button" data-question="Apa saja beasiswa yang tersedia di UIR?">
+                <span class="category__name">Beasiswa</span>
+                <span class="category__desc">Informasi beasiswa pada halaman resmi UIR.</span>
+              </button>
+              <button class="category" type="button" data-question="Apa informasi akademik yang tersedia di UIR?">
+                <span class="category__name">Informasi akademik</span>
+                <span class="category__desc">Informasi akademik dari halaman publik UIR.</span>
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <section class="view view--chat" id="percakapan" aria-labelledby="chat-title" hidden>
+          <h1 class="visually-hidden" id="chat-title">Percakapan dengan Chatbot Agentic AI UIR</h1>
+          <div class="thread" id="thread" role="log" aria-live="polite" aria-relevant="additions">
+            <div class="thread__start" id="thread-start">
+              <span class="thread__mark" aria-hidden="true">UIR</span>
+              <p><strong>Ajukan pertanyaan tentang Universitas Islam Riau.</strong></p>
+              <p>Jawaban yang terverifikasi akan muncul bersama sumbernya.</p>
+            </div>
+          </div>
+          <form class="composer" id="chat-form" data-endpoint="/api/chat" novalidate>
+            <label class="visually-hidden" for="question">Pertanyaan Anda</label>
+            <div class="composer__row">
+              <textarea id="question" name="question" rows="1" maxlength="2000" placeholder="Tulis pertanyaan tentang UIR…" aria-describedby="input-help" autocomplete="off" required></textarea>
+              <button class="btn btn--primary composer__send" type="submit" id="btn-send" aria-label="Kirim pertanyaan">
+                <svg aria-hidden="true"><use href="#icon-send"></use></svg>
+                <span id="send-label">Kirim</span>
+              </button>
+            </div>
+            <div class="composer__meta">
+              <p class="composer__help" id="input-help">Enter untuk mengirim. Shift+Enter untuk baris baru.</p>
+              <p class="composer__error" id="input-error" role="alert" hidden></p>
+              <span class="composer__count" id="char-count" aria-hidden="true">0/2000</span>
+            </div>
+          </form>
+        </section>
+
+        <section class="view view--about" id="tentang" aria-labelledby="about-title" hidden>
+          <h1 id="about-title">Tentang Sistem</h1>
+          <p class="about__lead">Chatbot Agentic AI UIR menjawab pertanyaan publik tentang Universitas Islam Riau sambil mempertahankan jejak bukti untuk setiap jawaban.</p>
+          <dl class="fact-list">
+            <div>
+              <dt>Sumber informasi</dt>
+              <dd>Halaman publik pada domain uir.ac.id. Tautan diperiksa ulang oleh backend sebelum ditampilkan.</dd>
+            </div>
+            <div>
+              <dt>Penalaran agen</dt>
+              <dd>TokenHarbor (API OpenAI-compatible) melalui koneksi HTTPS dengan kredensial dari environment variable, memakai model <code>deepseek-v4.1-flash:free</code>. Ollama lokal tersedia hanya sebagai opsi rollback.</dd>
+            </div>
+            <div>
+              <dt>Verifikasi jawaban</dt>
+              <dd>Jawaban hanya disajikan bila bagian yang diklaim memiliki bukti dari halaman yang benar-benar dibaca.</dd>
+            </div>
+            <div>
+              <dt>Batas langkah</dt>
+              <dd>Agen berhenti paling lambat setelah lima langkah pencarian dan pembacaan.</dd>
+            </div>
+            <div>
+              <dt>Cache halaman</dt>
+              <dd>Konten halaman disimpan sementara selama 24 jam agar pembacaan berulang lebih hemat.</dd>
+            </div>
+            <div>
+              <dt>Riwayat sesi</dt>
+              <dd>Sesi dan bukti disimpan sementara di memori server. Riwayat hilang saat server dimatikan.</dd>
+            </div>
+          </dl>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <script src="js/app.js?v=1.4.0" defer></script>
+</body>
+</html>

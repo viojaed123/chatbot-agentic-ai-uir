@@ -1,0 +1,2310 @@
+{
+  "ringkasan": {
+    "n": 8,
+    "berhasil": 7,
+    "latency": {
+      "n": 8,
+      "rata": 20.81,
+      "median": 19.32,
+      "p95": 32.71,
+      "min": 9.33,
+      "maks": 32.71
+    },
+    "token": {
+      "n": 8,
+      "rata": 31831.5,
+      "median": 32271.5,
+      "p95": 51451.0,
+      "min": 19667.0,
+      "maks": 51451.0
+    },
+    "rata_cited": 1.25,
+    "rata_langkah": 2.88,
+    "trace_unik": 8,
+    "tahap1_frontend_ke_backend": {
+      "n": 8,
+      "rata": 0.02,
+      "median": 0.0,
+      "p95": 0.12,
+      "min": 0.0,
+      "maks": 0.12
+    },
+    "tahap2_backend_ke_run": {
+      "n": 8,
+      "rata": 0.05,
+      "median": 0.04,
+      "p95": 0.15,
+      "min": 0.03,
+      "maks": 0.15
+    },
+    "tahap3_tunggu_model": {
+      "n": 8,
+      "rata": 3.54,
+      "median": 3.37,
+      "p95": 6.26,
+      "min": 2.31,
+      "maks": 6.26
+    },
+    "tahap4_reasoning": {
+      "n": 8,
+      "rata": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "maks": 0.0
+    },
+    "tahap4_model_jeda": {
+      "n": 8,
+      "rata": 12.57,
+      "median": 10.74,
+      "p95": 24.12,
+      "min": 5.54,
+      "maks": 24.12
+    },
+    "tahap5_mcp_total": {
+      "n": 8,
+      "rata": 4.52,
+      "median": 3.77,
+      "p95": 14.79,
+      "min": 0.04,
+      "maks": 14.79
+    },
+    "tahap6_retrieval": {
+      "n": 8,
+      "rata": 4.52,
+      "median": 3.77,
+      "p95": 14.79,
+      "min": 0.04,
+      "maks": 14.79
+    },
+    "tahap7_polling": {
+      "n": 8,
+      "rata": 20.73,
+      "median": 19.26,
+      "p95": 32.66,
+      "min": 9.28,
+      "maks": 32.66
+    },
+    "tahap7_polling_http": {
+      "n": 8,
+      "rata": 0.53,
+      "median": 0.49,
+      "p95": 0.94,
+      "min": 0.23,
+      "maks": 0.94
+    },
+    "tahap8a_model_akhir": {
+      "n": 8,
+      "rata": 4.89,
+      "median": 4.79,
+      "p95": 7.1,
+      "min": 3.18,
+      "maks": 7.1
+    },
+    "tahap8b_backend": {
+      "n": 7,
+      "rata": 0.01,
+      "median": 0.01,
+      "p95": 0.03,
+      "min": 0.01,
+      "maks": 0.03
+    },
+    "tahap9_backend_ke_frontend": {
+      "n": 8,
+      "rata": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "maks": 0.0
+    },
+    "tahap5_jumlah_panggilan": {
+      "n": 8,
+      "rata": 7.0,
+      "median": 7.0,
+      "p95": 10.0,
+      "min": 4.0,
+      "maks": 10.0
+    },
+    "tahap5_gagal": 0,
+    "tahap3_nama": "run diterima -> event Hermes pertama (proxy tunggu model)",
+    "tahap4_nama": "reasoning: event reasoning.available atau jeda antar tool",
+    "tahap7_nama": "polling wall-clock (berimbrikan dengan tahap 3-6)",
+    "tahap7_http_nama": "overhead HTTP GET polling saja",
+    "tahap8_nama": "model menyusun jawaban akhir + backend verifikasi sitasi",
+    "waktu": "2026-11-25T10:56:54+00:00",
+    "fasa": "sebelum",
+    "mode": "dasar",
+    "port": 8013
+  },
+  "data": [
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "klien_mulai": 1795604047.74,
+      "klien_selesai": 1795604062.349,
+      "latency": 14.608,
+      "status": "berhasil",
+      "ok": true,
+      "galat_http": "",
+      "trace_id": "9730473a8263bc8b",
+      "session_id": "8F7lMA9ovFO11KPI2NHqxPV1F7HoIvE6",
+      "run_id": "run_f351da89d4c84ce5b43bb9ea6c36a625",
+      "token": 31378,
+      "langkah": 3,
+      "model": "deepseek-v4.1-flash:free",
+      "jawaban_panjang": 532,
+      "sumber": [
+        "https://uir.ac.id/profil/"
+      ],
+      "cited": 1,
+      "status_sumber": {
+        "https://uir.ac.id/profil/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/debat-visi-misi-calon-rektor-uir-ujang-paman-siap-kalah-syafrinaldi-dukung-up-bila-senat-memilihnya/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/jelang-dipilih-senat-dua-calon-rektor-uir-sampaikan-visi-dan-misi/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/menelaah-visi-dan-misi-prodi-teknik-geologi-di-era-disruptif-pendidikan-4-0/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/visitasi-keterbukaan-informasi-publik-di-uir-oleh-komisi-informasi-riau/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        }
+      },
+      "polling_count": 48,
+      "tahapan": {
+        "tahap1_frontend_ke_backend": 0.115,
+        "tahap2_backend_ke_run": 0.055,
+        "tahap3_tunggu_model": 2.307,
+        "tahap4_reasoning": 0,
+        "tahap4_model_jeda": 10.426,
+        "tahap5_mcp_total": 1.506,
+        "tahap6_retrieval": 1.506,
+        "tahap7_polling": 14.414,
+        "tahap7_polling_http": 0.296,
+        "tahap8a_model_akhir": 3.178,
+        "tahap8b_backend": 0.023,
+        "tahap9_backend_ke_frontend": 0.001
+      },
+      "telemetri_ringkas": {
+        "paling_lambat": [
+          {
+            "nama": "polling_status",
+            "jumlah": 48,
+            "total_detik": 0.296,
+            "maks_detik": 0.028,
+            "rata_detik": 0.006
+          },
+          {
+            "nama": "hermes_run_post",
+            "jumlah": 1,
+            "total_detik": 0.056,
+            "maks_detik": 0.056,
+            "rata_detik": 0.056
+          },
+          {
+            "nama": "transkrip_sumber",
+            "jumlah": 1,
+            "total_detik": 0.023,
+            "maks_detik": 0.023,
+            "rata_detik": 0.023
+          }
+        ],
+        "penanda": {
+          "api_terima": 0.0,
+          "validasi_selesai": 0.0,
+          "sesi_selesai": 0.0,
+          "hermes_mulai": 0.0,
+          "hermes_run_post_mulai": 0.0,
+          "hermes_run_post_selesai": 0.056,
+          "hermes_polling_mulai": 0.056,
+          "hermes_polling_selesai": 14.469,
+          "hermes_status_akhir": 14.469,
+          "hermes_transkrip_mulai": 14.469,
+          "hermes_transkrip_selesai": 14.493,
+          "hermes_jawaban_siap": 14.493,
+          "hermes_selesai": 14.493,
+          "respons_siap": 14.493,
+          "respons_kirim": 14.493
+        }
+      },
+      "event": {
+        "event": [
+          {
+            "event": "tool.started",
+            "timestamp": 1795604050.217,
+            "seq": 0,
+            "tool": "mcp__uir__cari_uir",
+            "preview_panjang": 32
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604050.261,
+            "seq": 1,
+            "tool": "mcp__uir__cari_uir",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604054.565,
+            "seq": 2,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604054.601,
+            "seq": 3,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604057.545,
+            "seq": 4,
+            "tool": "mcp__uir__ambil_halaman",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604058.971,
+            "seq": 5,
+            "tool": "mcp__uir__ambil_halaman",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "run.completed",
+            "timestamp": 1795604062.149,
+            "seq": 6,
+            "output_panjang": 532
+          }
+        ],
+        "alat": [
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.044,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.036,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 1.426,
+            "gagal": false
+          }
+        ],
+        "jeda_model": [
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 4.304
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 2.944
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "run.completed",
+            "detik": 3.178
+          }
+        ],
+        "reasoning": 0,
+        "reasoning_detik": 0,
+        "run_status": "completed",
+        "token": 31378
+      },
+      "pesan": ""
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "klien_mulai": 1795604062.352,
+      "klien_selesai": 1795604080.596,
+      "latency": 18.243,
+      "status": "berhasil",
+      "ok": true,
+      "galat_http": "",
+      "trace_id": "f6e9b80a1eed8714",
+      "session_id": "tjoNEF9I7uEgngmZSJnyOEzI6l8Y8s3u",
+      "run_id": "run_491e4e52632e4264a39a60bca48b29f5",
+      "token": 33489,
+      "langkah": 5,
+      "model": "deepseek-v4.1-flash:free",
+      "jawaban_panjang": 759,
+      "sumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/"
+      ],
+      "cited": 2,
+      "status_sumber": {
+        "https://uir.ac.id/217-peserta-bersaing-rebut-rp-101juta-lldikti-ea-2018-rektor-uir-berikan-apresiasi/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/30-tahun-mengabdi-rektor-uir-beri-penghargaan-kepada-dosen-dan-tendik/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/aptisi-wilayah-x-b-dipimpin-rektor-uir/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/dokumen-peraturan-rektor/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/profil/laporan-rektor-uir/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/6-236-mahasiswa-uir-ikuti-masa-pengenalan-kampus-rektor-jangan-kecewakan-orangtua/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        }
+      },
+      "polling_count": 60,
+      "tahapan": {
+        "tahap1_frontend_ke_backend": 0.002,
+        "tahap2_backend_ke_run": 0.054,
+        "tahap3_tunggu_model": 2.623,
+        "tahap4_reasoning": 0,
+        "tahap4_model_jeda": 11.055,
+        "tahap5_mcp_total": 4.497,
+        "tahap6_retrieval": 4.497,
+        "tahap7_polling": 18.16,
+        "tahap7_polling_http": 0.438,
+        "tahap8a_model_akhir": 5.202,
+        "tahap8b_backend": 0.027,
+        "tahap9_backend_ke_frontend": 0.001
+      },
+      "telemetri_ringkas": {
+        "paling_lambat": [
+          {
+            "nama": "polling_status",
+            "jumlah": 60,
+            "total_detik": 0.438,
+            "maks_detik": 0.031,
+            "rata_detik": 0.007
+          },
+          {
+            "nama": "hermes_run_post",
+            "jumlah": 1,
+            "total_detik": 0.054,
+            "maks_detik": 0.054,
+            "rata_detik": 0.054
+          },
+          {
+            "nama": "transkrip_sumber",
+            "jumlah": 1,
+            "total_detik": 0.026,
+            "maks_detik": 0.026,
+            "rata_detik": 0.026
+          }
+        ],
+        "penanda": {
+          "api_terima": 0.0,
+          "validasi_selesai": 0.0,
+          "sesi_selesai": 0.0,
+          "hermes_mulai": 0.0,
+          "hermes_run_post_mulai": 0.0,
+          "hermes_run_post_selesai": 0.054,
+          "hermes_polling_mulai": 0.054,
+          "hermes_polling_selesai": 18.214,
+          "hermes_status_akhir": 18.214,
+          "hermes_transkrip_mulai": 18.214,
+          "hermes_transkrip_selesai": 18.241,
+          "hermes_jawaban_siap": 18.241,
+          "hermes_selesai": 18.241,
+          "respons_siap": 18.241,
+          "respons_kirim": 18.241
+        }
+      },
+      "event": {
+        "event": [
+          {
+            "event": "tool.started",
+            "timestamp": 1795604065.031,
+            "seq": 0,
+            "tool": "mcp__uir__cari_uir",
+            "preview_panjang": 10
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604066.219,
+            "seq": 1,
+            "tool": "mcp__uir__cari_uir",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604069.642,
+            "seq": 2,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604069.713,
+            "seq": 3,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604069.72,
+            "seq": 4,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604069.779,
+            "seq": 5,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604072.195,
+            "seq": 6,
+            "tool": "mcp__uir__ambil_halaman",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604073.801,
+            "seq": 7,
+            "tool": "mcp__uir__ambil_halaman",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604073.808,
+            "seq": 8,
+            "tool": "mcp__uir__ambil_halaman",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604075.381,
+            "seq": 9,
+            "tool": "mcp__uir__ambil_halaman",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "run.completed",
+            "timestamp": 1795604080.583,
+            "seq": 10,
+            "output_panjang": 759
+          }
+        ],
+        "alat": [
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 1.188,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.071,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.059,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 1.606,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 1.573,
+            "gagal": false
+          }
+        ],
+        "jeda_model": [
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 3.423
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 0.007
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 2.416
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 0.007
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "run.completed",
+            "detik": 5.202
+          }
+        ],
+        "reasoning": 0,
+        "reasoning_detik": 0,
+        "run_status": "completed",
+        "token": 33489
+      },
+      "pesan": ""
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "klien_mulai": 1795604080.608,
+      "klien_selesai": 1795604109.948,
+      "latency": 29.34,
+      "status": "berhasil",
+      "ok": true,
+      "galat_http": "",
+      "trace_id": "b3c6427c098a69af",
+      "session_id": "qeCPqAzcr6C_CYNP5H_1i_W9q9l6iHp6",
+      "run_id": "run_a4d33107b6d44860833472e6c4884638",
+      "token": 19667,
+      "langkah": 2,
+      "model": "deepseek-v4.1-flash:free",
+      "jawaban_panjang": 571,
+      "sumber": [
+        "https://uir.ac.id/kontak/",
+        "https://uir.ac.id/maps/"
+      ],
+      "cited": 2,
+      "status_sumber": {
+        "https://uir.ac.id/kontak/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/maps/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/profil/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/en/mapala-uir/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/en/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/?elementor_library=kontak": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/bangun-kolaborasi-internasional-uir-teken-mou-dengan-kuypj-malaysia/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/penelitian-mingguini/biji-matoa-disulap-jadi-penyerap-limbah-logam-berat-dosen-uir-kembangkan-biosorben-ramah-lingkungan/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        }
+      },
+      "polling_count": 95,
+      "tahapan": {
+        "tahap1_frontend_ke_backend": 0.002,
+        "tahap2_backend_ke_run": 0.151,
+        "tahap3_tunggu_model": 6.259,
+        "tahap4_reasoning": 0,
+        "tahap4_model_jeda": 8.118,
+        "tahap5_mcp_total": 14.787,
+        "tahap6_retrieval": 14.787,
+        "tahap7_polling": 29.177,
+        "tahap7_polling_http": 0.945,
+        "tahap8a_model_akhir": 4.49,
+        "tahap8b_backend": 0.008,
+        "tahap9_backend_ke_frontend": 0.001
+      },
+      "telemetri_ringkas": {
+        "paling_lambat": [
+          {
+            "nama": "polling_status",
+            "jumlah": 95,
+            "total_detik": 0.945,
+            "maks_detik": 0.375,
+            "rata_detik": 0.01
+          },
+          {
+            "nama": "hermes_run_post",
+            "jumlah": 1,
+            "total_detik": 0.151,
+            "maks_detik": 0.151,
+            "rata_detik": 0.151
+          },
+          {
+            "nama": "transkrip_sumber",
+            "jumlah": 1,
+            "total_detik": 0.008,
+            "maks_detik": 0.008,
+            "rata_detik": 0.008
+          }
+        ],
+        "penanda": {
+          "api_terima": 0.0,
+          "validasi_selesai": 0.0,
+          "sesi_selesai": 0.0,
+          "hermes_mulai": 0.0,
+          "hermes_run_post_mulai": 0.0,
+          "hermes_run_post_selesai": 0.151,
+          "hermes_polling_mulai": 0.151,
+          "hermes_polling_selesai": 29.328,
+          "hermes_status_akhir": 29.328,
+          "hermes_transkrip_mulai": 29.328,
+          "hermes_transkrip_selesai": 29.336,
+          "hermes_jawaban_siap": 29.336,
+          "hermes_selesai": 29.336,
+          "respons_siap": 29.336,
+          "respons_kirim": 29.336
+        }
+      },
+      "event": {
+        "event": [
+          {
+            "event": "tool.started",
+            "timestamp": 1795604087.02,
+            "seq": 0,
+            "tool": "mcp__uir__cari_uir",
+            "preview_panjang": 24
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604101.773,
+            "seq": 1,
+            "tool": "mcp__uir__cari_uir",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604105.401,
+            "seq": 2,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604105.435,
+            "seq": 3,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "run.completed",
+            "timestamp": 1795604109.925,
+            "seq": 4,
+            "output_panjang": 571
+          }
+        ],
+        "alat": [
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 14.753,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.034,
+            "gagal": false
+          }
+        ],
+        "jeda_model": [
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 3.628
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "run.completed",
+            "detik": 4.49
+          }
+        ],
+        "reasoning": 0,
+        "reasoning_detik": 0,
+        "run_status": "completed",
+        "token": 19667
+      },
+      "pesan": ""
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "klien_mulai": 1795604109.953,
+      "klien_selesai": 1795604142.66,
+      "latency": 32.707,
+      "status": "penyedia_tidak_tersedia",
+      "ok": false,
+      "galat_http": "",
+      "trace_id": "297c7974db81031e",
+      "session_id": "hbBrqO2I_-yljsfzSWY2vHqwuAGldABj",
+      "run_id": "run_a2c5d539f7484a1e9167f3c870243a4a",
+      "token": 45373,
+      "langkah": 0,
+      "model": "deepseek-v4.1-flash:free",
+      "jawaban_panjang": 0,
+      "sumber": [],
+      "cited": 0,
+      "status_sumber": {},
+      "polling_count": 107,
+      "tahapan": {
+        "tahap1_frontend_ke_backend": 0.002,
+        "tahap2_backend_ke_run": 0.04,
+        "tahap3_tunggu_model": 3.336,
+        "tahap4_reasoning": 0,
+        "tahap4_model_jeda": 21.405,
+        "tahap5_mcp_total": 7.695,
+        "tahap6_retrieval": 7.695,
+        "tahap7_polling": 32.664,
+        "tahap7_polling_http": 0.825,
+        "tahap8a_model_akhir": 6.13,
+        "tahap8b_backend": null,
+        "tahap9_backend_ke_frontend": 0.001
+      },
+      "telemetri_ringkas": {
+        "paling_lambat": [
+          {
+            "nama": "polling_status",
+            "jumlah": 107,
+            "total_detik": 0.825,
+            "maks_detik": 0.032,
+            "rata_detik": 0.008
+          },
+          {
+            "nama": "hermes_run_post",
+            "jumlah": 1,
+            "total_detik": 0.04,
+            "maks_detik": 0.04,
+            "rata_detik": 0.04
+          },
+          {
+            "nama": "validasi",
+            "jumlah": 1,
+            "total_detik": 0.0,
+            "maks_detik": 0.0,
+            "rata_detik": 0.0
+          }
+        ],
+        "penanda": {
+          "api_terima": 0.0,
+          "validasi_selesai": 0.0,
+          "sesi_selesai": 0.0,
+          "hermes_mulai": 0.0,
+          "hermes_run_post_mulai": 0.0,
+          "hermes_run_post_selesai": 0.04,
+          "hermes_polling_mulai": 0.04,
+          "hermes_polling_selesai": 32.704,
+          "hermes_status_akhir": 32.704,
+          "hermes_selesai": 32.704,
+          "respons_siap": 32.704,
+          "respons_kirim": 32.704
+        }
+      },
+      "event": {
+        "event": [
+          {
+            "event": "tool.started",
+            "timestamp": 1795604113.331,
+            "seq": 0,
+            "tool": "mcp__uir__cari_uir",
+            "preview_panjang": 13
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604118.917,
+            "seq": 1,
+            "tool": "mcp__uir__cari_uir",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604122.331,
+            "seq": 2,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604122.359,
+            "seq": 3,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604127.481,
+            "seq": 4,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604127.504,
+            "seq": 5,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604130.506,
+            "seq": 6,
+            "tool": "mcp__uir__ambil_halaman",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604132.536,
+            "seq": 7,
+            "tool": "mcp__uir__ambil_halaman",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604136.273,
+            "seq": 8,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604136.301,
+            "seq": 9,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "run.failed",
+            "timestamp": 1795604142.431,
+            "seq": 10,
+            "output_panjang": 1356
+          }
+        ],
+        "alat": [
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 5.586,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.028,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.023,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 2.03,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.028,
+            "gagal": false
+          }
+        ],
+        "jeda_model": [
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 3.414
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 5.122
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 3.002
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 3.737
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "run.failed",
+            "detik": 6.13
+          }
+        ],
+        "reasoning": 0,
+        "reasoning_detik": 0,
+        "run_status": "failed",
+        "token": 45373
+      },
+      "pesan": "Hermes Agent tidak menyelesaikan permintaan."
+    },
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "klien_mulai": 1795604142.684,
+      "klien_selesai": 1795604152.013,
+      "latency": 9.33,
+      "status": "berhasil",
+      "ok": true,
+      "galat_http": "",
+      "trace_id": "d006a819b9994bbe",
+      "session_id": "-2rEdHoHhlsvXXH6UWrlF6ha-1tWSooe",
+      "run_id": "run_dd6cdfd7ea174f25976106235281ac51",
+      "token": 20238,
+      "langkah": 2,
+      "model": "deepseek-v4.1-flash:free",
+      "jawaban_panjang": 740,
+      "sumber": [
+        "https://uir.ac.id/profil/"
+      ],
+      "cited": 1,
+      "status_sumber": {
+        "https://uir.ac.id/profil/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/debat-visi-misi-calon-rektor-uir-ujang-paman-siap-kalah-syafrinaldi-dukung-up-bila-senat-memilihnya/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/jelang-dipilih-senat-dua-calon-rektor-uir-sampaikan-visi-dan-misi/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/menelaah-visi-dan-misi-prodi-teknik-geologi-di-era-disruptif-pendidikan-4-0/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/visitasi-keterbukaan-informasi-publik-di-uir-oleh-komisi-informasi-riau/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        }
+      },
+      "polling_count": 31,
+      "tahapan": {
+        "tahap1_frontend_ke_backend": 0.012,
+        "tahap2_backend_ke_run": 0.028,
+        "tahap3_tunggu_model": 3.623,
+        "tahap4_reasoning": 0,
+        "tahap4_model_jeda": 5.54,
+        "tahap5_mcp_total": 0.057,
+        "tahap6_retrieval": 0.057,
+        "tahap7_polling": 9.28,
+        "tahap7_polling_http": 0.269,
+        "tahap8a_model_akhir": 3.679,
+        "tahap8b_backend": 0.008,
+        "tahap9_backend_ke_frontend": 0.001
+      },
+      "telemetri_ringkas": {
+        "paling_lambat": [
+          {
+            "nama": "polling_status",
+            "jumlah": 31,
+            "total_detik": 0.269,
+            "maks_detik": 0.029,
+            "rata_detik": 0.009
+          },
+          {
+            "nama": "hermes_run_post",
+            "jumlah": 1,
+            "total_detik": 0.028,
+            "maks_detik": 0.028,
+            "rata_detik": 0.028
+          },
+          {
+            "nama": "transkrip_sumber",
+            "jumlah": 1,
+            "total_detik": 0.008,
+            "maks_detik": 0.008,
+            "rata_detik": 0.008
+          }
+        ],
+        "penanda": {
+          "api_terima": 0.0,
+          "validasi_selesai": 0.0,
+          "sesi_selesai": 0.0,
+          "hermes_mulai": 0.0,
+          "hermes_run_post_mulai": 0.0,
+          "hermes_run_post_selesai": 0.028,
+          "hermes_polling_mulai": 0.028,
+          "hermes_polling_selesai": 9.308,
+          "hermes_status_akhir": 9.308,
+          "hermes_transkrip_mulai": 9.308,
+          "hermes_transkrip_selesai": 9.316,
+          "hermes_jawaban_siap": 9.316,
+          "hermes_selesai": 9.316,
+          "respons_siap": 9.316,
+          "respons_kirim": 9.316
+        }
+      },
+      "event": {
+        "event": [
+          {
+            "event": "tool.started",
+            "timestamp": 1795604146.347,
+            "seq": 0,
+            "tool": "mcp__uir__cari_uir",
+            "preview_panjang": 13
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604146.372,
+            "seq": 1,
+            "tool": "mcp__uir__cari_uir",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604148.233,
+            "seq": 2,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604148.265,
+            "seq": 3,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "run.completed",
+            "timestamp": 1795604151.944,
+            "seq": 4,
+            "output_panjang": 740
+          }
+        ],
+        "alat": [
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.025,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.032,
+            "gagal": false
+          }
+        ],
+        "jeda_model": [
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 1.861
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "run.completed",
+            "detik": 3.679
+          }
+        ],
+        "reasoning": 0,
+        "reasoning_detik": 0,
+        "run_status": "completed",
+        "token": 20238
+      },
+      "pesan": ""
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "klien_mulai": 1795604152.033,
+      "klien_selesai": 1795604172.438,
+      "latency": 20.405,
+      "status": "berhasil",
+      "ok": true,
+      "galat_http": "",
+      "trace_id": "c348f6774b20d99e",
+      "session_id": "YMZJwzyyEwsjrFFRUSBRu0Ga_igCn602",
+      "run_id": "run_36f1c80b9ca044caa4bcfb5532dfd949",
+      "token": 33165,
+      "langkah": 5,
+      "model": "deepseek-v4.1-flash:free",
+      "jawaban_panjang": 734,
+      "sumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/profil/laporan-rektor-uir/"
+      ],
+      "cited": 2,
+      "status_sumber": {
+        "https://uir.ac.id/217-peserta-bersaing-rebut-rp-101juta-lldikti-ea-2018-rektor-uir-berikan-apresiasi/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/30-tahun-mengabdi-rektor-uir-beri-penghargaan-kepada-dosen-dan-tendik/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/aptisi-wilayah-x-b-dipimpin-rektor-uir/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/dokumen-peraturan-rektor/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/profil/laporan-rektor-uir/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/6-236-mahasiswa-uir-ikuti-masa-pengenalan-kampus-rektor-jangan-kecewakan-orangtua/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        }
+      },
+      "polling_count": 67,
+      "tahapan": {
+        "tahap1_frontend_ke_backend": 0.001,
+        "tahap2_backend_ke_run": 0.032,
+        "tahap3_tunggu_model": 3.557,
+        "tahap4_reasoning": 0,
+        "tahap4_model_jeda": 13.39,
+        "tahap5_mcp_total": 3.246,
+        "tahap6_retrieval": 3.246,
+        "tahap7_polling": 20.362,
+        "tahap7_polling_http": 0.537,
+        "tahap8a_model_akhir": 5.091,
+        "tahap8b_backend": 0.008,
+        "tahap9_backend_ke_frontend": 0.002
+      },
+      "telemetri_ringkas": {
+        "paling_lambat": [
+          {
+            "nama": "polling_status",
+            "jumlah": 67,
+            "total_detik": 0.537,
+            "maks_detik": 0.036,
+            "rata_detik": 0.008
+          },
+          {
+            "nama": "hermes_run_post",
+            "jumlah": 1,
+            "total_detik": 0.031,
+            "maks_detik": 0.031,
+            "rata_detik": 0.031
+          },
+          {
+            "nama": "transkrip_sumber",
+            "jumlah": 1,
+            "total_detik": 0.007,
+            "maks_detik": 0.007,
+            "rata_detik": 0.007
+          }
+        ],
+        "penanda": {
+          "api_terima": 0.0,
+          "validasi_selesai": 0.0,
+          "sesi_selesai": 0.0,
+          "hermes_mulai": 0.0,
+          "hermes_run_post_mulai": 0.0,
+          "hermes_run_post_selesai": 0.031,
+          "hermes_polling_mulai": 0.031,
+          "hermes_polling_selesai": 20.394,
+          "hermes_status_akhir": 20.394,
+          "hermes_transkrip_mulai": 20.394,
+          "hermes_transkrip_selesai": 20.401,
+          "hermes_jawaban_siap": 20.402,
+          "hermes_selesai": 20.402,
+          "respons_siap": 20.402,
+          "respons_kirim": 20.402
+        }
+      },
+      "event": {
+        "event": [
+          {
+            "event": "tool.started",
+            "timestamp": 1795604155.623,
+            "seq": 0,
+            "tool": "mcp__uir__cari_uir",
+            "preview_panjang": 10
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604155.645,
+            "seq": 1,
+            "tool": "mcp__uir__cari_uir",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604160.29,
+            "seq": 2,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604160.312,
+            "seq": 3,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604160.32,
+            "seq": 4,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604160.344,
+            "seq": 5,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604163.983,
+            "seq": 6,
+            "tool": "mcp__uir__ambil_halaman",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604165.89,
+            "seq": 7,
+            "tool": "mcp__uir__ambil_halaman",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604165.897,
+            "seq": 8,
+            "tool": "mcp__uir__ambil_halaman",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604167.168,
+            "seq": 9,
+            "tool": "mcp__uir__ambil_halaman",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "run.completed",
+            "timestamp": 1795604172.259,
+            "seq": 10,
+            "output_panjang": 734
+          }
+        ],
+        "alat": [
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.022,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.022,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.024,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 1.907,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 1.271,
+            "gagal": false
+          }
+        ],
+        "jeda_model": [
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 4.645
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 0.008
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 3.639
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 0.007
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "run.completed",
+            "detik": 5.091
+          }
+        ],
+        "reasoning": 0,
+        "reasoning_detik": 0,
+        "run_status": "completed",
+        "token": 33165
+      },
+      "pesan": ""
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "klien_mulai": 1795604172.453,
+      "klien_selesai": 1795604182.35,
+      "latency": 9.897,
+      "status": "berhasil",
+      "ok": true,
+      "galat_http": "",
+      "trace_id": "6d11cc0cddc0ddf5",
+      "session_id": "kNeB3KZqq7PJsFSV4Hr2D6Po9fbeHaQb",
+      "run_id": "run_fc1c4a1eead1468f8b4adf80677f7760",
+      "token": 19891,
+      "langkah": 2,
+      "model": "deepseek-v4.1-flash:free",
+      "jawaban_panjang": 533,
+      "sumber": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "cited": 1,
+      "status_sumber": {
+        "https://uir.ac.id/kontak/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/maps/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/profil/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/en/mapala-uir/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/en/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/?elementor_library=kontak": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/bangun-kolaborasi-internasional-uir-teken-mou-dengan-kuypj-malaysia/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/penelitian-mingguini/biji-matoa-disulap-jadi-penyerap-limbah-logam-berat-dosen-uir-kembangkan-biosorben-ramah-lingkungan/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        }
+      },
+      "polling_count": 33,
+      "tahapan": {
+        "tahap1_frontend_ke_backend": 0.014,
+        "tahap2_backend_ke_run": 0.03,
+        "tahap3_tunggu_model": 3.172,
+        "tahap4_reasoning": 0,
+        "tahap4_model_jeda": 6.523,
+        "tahap5_mcp_total": 0.045,
+        "tahap6_retrieval": 0.045,
+        "tahap7_polling": 9.846,
+        "tahap7_polling_http": 0.233,
+        "tahap8a_model_akhir": 4.282,
+        "tahap8b_backend": 0.006,
+        "tahap9_backend_ke_frontend": 0.001
+      },
+      "telemetri_ringkas": {
+        "paling_lambat": [
+          {
+            "nama": "polling_status",
+            "jumlah": 33,
+            "total_detik": 0.233,
+            "maks_detik": 0.028,
+            "rata_detik": 0.007
+          },
+          {
+            "nama": "hermes_run_post",
+            "jumlah": 1,
+            "total_detik": 0.031,
+            "maks_detik": 0.031,
+            "rata_detik": 0.031
+          },
+          {
+            "nama": "transkrip_sumber",
+            "jumlah": 1,
+            "total_detik": 0.006,
+            "maks_detik": 0.006,
+            "rata_detik": 0.006
+          }
+        ],
+        "penanda": {
+          "api_terima": 0.0,
+          "validasi_selesai": 0.0,
+          "sesi_selesai": 0.0,
+          "hermes_mulai": 0.0,
+          "hermes_run_post_mulai": 0.0,
+          "hermes_run_post_selesai": 0.031,
+          "hermes_polling_mulai": 0.031,
+          "hermes_polling_selesai": 9.877,
+          "hermes_status_akhir": 9.877,
+          "hermes_transkrip_mulai": 9.877,
+          "hermes_transkrip_selesai": 9.883,
+          "hermes_jawaban_siap": 9.883,
+          "hermes_selesai": 9.883,
+          "respons_siap": 9.883,
+          "respons_kirim": 9.883
+        }
+      },
+      "event": {
+        "event": [
+          {
+            "event": "tool.started",
+            "timestamp": 1795604175.669,
+            "seq": 0,
+            "tool": "mcp__uir__cari_uir",
+            "preview_panjang": 30
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604175.691,
+            "seq": 1,
+            "tool": "mcp__uir__cari_uir",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604177.932,
+            "seq": 2,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604177.955,
+            "seq": 3,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "run.completed",
+            "timestamp": 1795604182.237,
+            "seq": 4,
+            "output_panjang": 533
+          }
+        ],
+        "alat": [
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.022,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.023,
+            "gagal": false
+          }
+        ],
+        "jeda_model": [
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 2.241
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "run.completed",
+            "detik": 4.282
+          }
+        ],
+        "reasoning": 0,
+        "reasoning_detik": 0,
+        "run_status": "completed",
+        "token": 19891
+      },
+      "pesan": ""
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "klien_mulai": 1795604182.376,
+      "klien_selesai": 1795604214.36,
+      "latency": 31.984,
+      "status": "berhasil",
+      "ok": true,
+      "galat_http": "",
+      "trace_id": "53beba1c7ece9458",
+      "session_id": "bEF1z7_Lsy2XXalFR4SS_ImgqE47H-qN",
+      "run_id": "run_ab326543006a4fdab7d84f4b934f0841",
+      "token": 51451,
+      "langkah": 4,
+      "model": "deepseek-v4.1-flash:free",
+      "jawaban_panjang": 1231,
+      "sumber": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "cited": 1,
+      "status_sumber": {
+        "https://uir.ac.id/program-pendidikan/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": true,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/dua-tahun-berdiri-program-studi-doktor-sains-manajemen-uir-sukses-raih-akreditasi-unggul/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/program-studi-pendidikan-profesi-psikolog-uir-resmi-di-buka/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/uir-resmi-kantongi-izin-pembukaan-program-studi-kedokteran-gigi-dan-pendidikan-profesi-kedokteran-gigi/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/uir-buka-program-studi-magister-sains-data-jawab-kebutuhan-kompetensi-di-era-digital/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/program-pengembangan-dan-keberlanjutan/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/program-pengembangan-dan-keberlanjutan-uir/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/pusat-studi/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/program-studi/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        },
+        "https://uir.ac.id/akreditasi/": {
+          "retrieved": true,
+          "read": true,
+          "evidence": true,
+          "used": true,
+          "cited": false,
+          "alasan": [
+            "tool Hermes Agent"
+          ]
+        }
+      },
+      "polling_count": 105,
+      "tahapan": {
+        "tahap1_frontend_ke_backend": 0.002,
+        "tahap2_backend_ke_run": 0.03,
+        "tahap3_tunggu_model": 3.403,
+        "tahap4_reasoning": 0,
+        "tahap4_model_jeda": 24.122,
+        "tahap5_mcp_total": 4.302,
+        "tahap6_retrieval": 4.302,
+        "tahap7_polling": 31.944,
+        "tahap7_polling_http": 0.705,
+        "tahap8a_model_akhir": 7.104,
+        "tahap8b_backend": 0.007,
+        "tahap9_backend_ke_frontend": 0.001
+      },
+      "telemetri_ringkas": {
+        "paling_lambat": [
+          {
+            "nama": "polling_status",
+            "jumlah": 105,
+            "total_detik": 0.705,
+            "maks_detik": 0.027,
+            "rata_detik": 0.007
+          },
+          {
+            "nama": "hermes_run_post",
+            "jumlah": 1,
+            "total_detik": 0.03,
+            "maks_detik": 0.03,
+            "rata_detik": 0.03
+          },
+          {
+            "nama": "transkrip_sumber",
+            "jumlah": 1,
+            "total_detik": 0.007,
+            "maks_detik": 0.007,
+            "rata_detik": 0.007
+          }
+        ],
+        "penanda": {
+          "api_terima": 0.0,
+          "validasi_selesai": 0.0,
+          "sesi_selesai": 0.0,
+          "hermes_mulai": 0.0,
+          "hermes_run_post_mulai": 0.0,
+          "hermes_run_post_selesai": 0.03,
+          "hermes_polling_mulai": 0.03,
+          "hermes_polling_selesai": 31.974,
+          "hermes_status_akhir": 31.974,
+          "hermes_transkrip_mulai": 31.974,
+          "hermes_transkrip_selesai": 31.981,
+          "hermes_jawaban_siap": 31.981,
+          "hermes_selesai": 31.981,
+          "respons_siap": 31.981,
+          "respons_kirim": 31.981
+        }
+      },
+      "event": {
+        "event": [
+          {
+            "event": "tool.started",
+            "timestamp": 1795604185.811,
+            "seq": 0,
+            "tool": "mcp__uir__cari_uir",
+            "preview_panjang": 13
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604185.834,
+            "seq": 1,
+            "tool": "mcp__uir__cari_uir",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604187.874,
+            "seq": 2,
+            "tool": "mcp__uir__baca_cache",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604187.898,
+            "seq": 3,
+            "tool": "mcp__uir__baca_cache",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604197.204,
+            "seq": 4,
+            "tool": "mcp__uir__ambil_halaman",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604199.329,
+            "seq": 5,
+            "tool": "mcp__uir__ambil_halaman",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.started",
+            "timestamp": 1795604205.001,
+            "seq": 6,
+            "tool": "mcp__uir__ambil_halaman",
+            "preview_panjang": 0
+          },
+          {
+            "event": "tool.completed",
+            "timestamp": 1795604207.131,
+            "seq": 7,
+            "tool": "mcp__uir__ambil_halaman",
+            "duration": 0.0,
+            "error": false,
+            "preview_panjang": 0
+          },
+          {
+            "event": "run.completed",
+            "timestamp": 1795604214.235,
+            "seq": 8,
+            "output_panjang": 1231
+          }
+        ],
+        "alat": [
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 0.0,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__cari_uir",
+            "detik": 0.023,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__baca_cache",
+            "detik": 0.024,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 2.125,
+            "gagal": false
+          },
+          {
+            "tool": "mcp__uir__ambil_halaman",
+            "detik": 2.13,
+            "gagal": false
+          }
+        ],
+        "jeda_model": [
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 2.04
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 9.306
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "tool.started",
+            "detik": 5.672
+          },
+          {
+            "dari": "tool.completed",
+            "ke": "run.completed",
+            "detik": 7.104
+          }
+        ],
+        "reasoning": 0,
+        "reasoning_detik": 0,
+        "run_status": "completed",
+        "token": 51451
+      },
+      "pesan": ""
+    }
+  ]
+}

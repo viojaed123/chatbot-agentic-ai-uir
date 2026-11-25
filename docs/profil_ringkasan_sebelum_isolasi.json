@@ -1,0 +1,137 @@
+{
+  "n": 3,
+  "berhasil": 3,
+  "latency": {
+    "n": 3,
+    "rata": 9.5,
+    "median": 7.85,
+    "p95": 17.52,
+    "min": 3.13,
+    "maks": 17.52
+  },
+  "token": {
+    "n": 3,
+    "rata": 20532.33,
+    "median": 20067.0,
+    "p95": 32455.0,
+    "min": 9075.0,
+    "maks": 32455.0
+  },
+  "rata_cited": 0.67,
+  "rata_langkah": 2.33,
+  "trace_unik": 3,
+  "tahap1_frontend_ke_backend": {
+    "n": 3,
+    "rata": 0.03,
+    "median": 0.0,
+    "p95": 0.1,
+    "min": 0.0,
+    "maks": 0.1
+  },
+  "tahap2_backend_ke_run": {
+    "n": 3,
+    "rata": 0.03,
+    "median": 0.03,
+    "p95": 0.04,
+    "min": 0.02,
+    "maks": 0.04
+  },
+  "tahap3_tunggu_model": {
+    "n": 3,
+    "rata": 2.49,
+    "median": 2.38,
+    "p95": 2.88,
+    "min": 2.21,
+    "maks": 2.88
+  },
+  "tahap4_reasoning": {
+    "n": 3,
+    "rata": 0.0,
+    "median": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "maks": 0.0
+  },
+  "tahap4_model_jeda": {
+    "n": 3,
+    "rata": 5.85,
+    "median": 5.43,
+    "p95": 12.11,
+    "min": 0.0,
+    "maks": 12.11
+  },
+  "tahap5_mcp_total": {
+    "n": 3,
+    "rata": 0.95,
+    "median": 0.05,
+    "p95": 2.81,
+    "min": 0.0,
+    "maks": 2.81
+  },
+  "tahap6_retrieval": {
+    "n": 3,
+    "rata": 0.95,
+    "median": 0.05,
+    "p95": 2.81,
+    "min": 0.0,
+    "maks": 2.81
+  },
+  "tahap7_polling": {
+    "n": 3,
+    "rata": 9.42,
+    "median": 7.68,
+    "p95": 17.47,
+    "min": 3.1,
+    "maks": 17.47
+  },
+  "tahap7_polling_http": {
+    "n": 3,
+    "rata": 0.21,
+    "median": 0.18,
+    "p95": 0.35,
+    "min": 0.09,
+    "maks": 0.35
+  },
+  "tahap8a_model_akhir": {
+    "n": 3,
+    "rata": 2.72,
+    "median": 3.43,
+    "p95": 4.72,
+    "min": 0.0,
+    "maks": 4.72
+  },
+  "tahap8b_backend": {
+    "n": 3,
+    "rata": 0.01,
+    "median": 0.01,
+    "p95": 0.03,
+    "min": 0.01,
+    "maks": 0.03
+  },
+  "tahap9_backend_ke_frontend": {
+    "n": 3,
+    "rata": 0.0,
+    "median": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "maks": 0.0
+  },
+  "tahap5_jumlah_panggilan": {
+    "n": 3,
+    "rata": 2.33,
+    "median": 2.0,
+    "p95": 5.0,
+    "min": 0.0,
+    "maks": 5.0
+  },
+  "tahap5_gagal": 0,
+  "tahap3_nama": "run diterima -> event Hermes pertama (proxy tunggu model)",
+  "tahap4_nama": "reasoning: event reasoning.available atau jeda antar tool",
+  "tahap7_nama": "polling wall-clock (berimbrikan dengan tahap 3-6)",
+  "tahap7_http_nama": "overhead HTTP GET polling saja",
+  "tahap8_nama": "model menyusun jawaban akhir + backend verifikasi sitasi",
+  "waktu": "2026-11-25T11:06:31+00:00",
+  "fasa": "sebelum",
+  "mode": "isolasi",
+  "port": 8013
+}

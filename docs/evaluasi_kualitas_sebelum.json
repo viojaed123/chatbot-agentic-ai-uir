@@ -1,0 +1,136 @@
+{
+  "ringkasan": {
+    "bukti": "docs/profil_performa_sebelum_dasar_20261125T110437Z.json",
+    "jumlah": 8,
+    "lolos": 7,
+    "akurasi_persentase": 87.5,
+    "rata_url_per_jawaban": 1.5
+  },
+  "data": [
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "run_id": "run_9d8685a9f1e4482ab0d2725cdb6625fe",
+      "panjang_jawaban": 660,
+      "url_jawaban": [
+        "https://uir.ac.id/profil/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/profil/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "run_id": "run_4ce31c42a6f74f5db79b05a15391eeed",
+      "panjang_jawaban": 875,
+      "url_jawaban": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "run_id": "run_fd52d9dc0f9d405d9f9f7518a27b678a",
+      "panjang_jawaban": 577,
+      "url_jawaban": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "run_id": "run_8f64cebcc9a14d428f5b116bb6b2dfc8",
+      "panjang_jawaban": 1245,
+      "url_jawaban": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "run_id": "run_9646c1644f064f449162ee1135f06aa8",
+      "panjang_jawaban": 862,
+      "url_jawaban": [
+        "https://uir.ac.id/visi-misi/",
+        "https://uir.ac.id/upaya-wujudkan-visi-tahun-2041-uir-gelar-fgd-integrasi-nilai-islam/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/upaya-wujudkan-visi-tahun-2041-uir-gelar-fgd-integrasi-nilai-islam/",
+        "https://uir.ac.id/visi-misi/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "run_id": "run_dcb9b72f730f43eaad3ee1741c5a3de6",
+      "panjang_jawaban": 853,
+      "url_jawaban": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "run_id": "run_c17f976b26b24c33bbbe2d449c08113a",
+      "panjang_jawaban": 483,
+      "url_jawaban": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "run_id": "run_4622bae6c06a407e840fc4b45b6a5fe4",
+      "panjang_jawaban": 1873,
+      "url_jawaban": [
+        "https://uir.ac.id/program-pendidikan/",
+        "https://uir.ac.id/daftar-kuliah-di-uir-jangan-asal-pilih-program-studi/"
+      ],
+      "url_tersumber": [],
+      "semua_url_tersumber": false,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": false,
+      "lolos": false
+    }
+  ]
+}

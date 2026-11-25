@@ -1,0 +1,8 @@
+# Dependensi antarmuka web. Tool 1/2/3, orchestrator, dan Ollama client
+# hanya memakai pustaka standar Python.
+streamlit>=1.67,<2
+
+# Backend API untuk frontend custom. FastAPI hanya menjadi adapter ke
+# Orkestrator; tidak menjalankan tool atau model secara langsung.
+fastapi>=0.115,<1
+uvicorn>=0.30,<1

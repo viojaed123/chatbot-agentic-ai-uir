@@ -1,0 +1,131 @@
+{
+  "ringkasan": {
+    "bukti": "docs/profil_performa_sesudah_dasar_20261125T111752Z.json",
+    "jumlah": 8,
+    "lolos": 8,
+    "akurasi_persentase": 100.0,
+    "rata_url_per_jawaban": 1.0
+  },
+  "data": [
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "run_id": "run_c133c713578f4eba9bcd5f4ba448d74f",
+      "panjang_jawaban": 564,
+      "url_jawaban": [
+        "https://uir.ac.id/profil/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/profil/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "run_id": "run_72de0e3bf2c94541917bff5de1dc735f",
+      "panjang_jawaban": 656,
+      "url_jawaban": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "run_id": "run_4b4a6bd29bca4217adb652cbe4bdd64a",
+      "panjang_jawaban": 533,
+      "url_jawaban": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "run_id": "run_c658ab65ffcd44fc8666910a2bde324a",
+      "panjang_jawaban": 1143,
+      "url_jawaban": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "run_id": "run_4c0e070e3a4042b5a5ecf958debc9b76",
+      "panjang_jawaban": 581,
+      "url_jawaban": [
+        "https://uir.ac.id/upaya-wujudkan-visi-tahun-2041-uir-gelar-fgd-integrasi-nilai-islam/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/upaya-wujudkan-visi-tahun-2041-uir-gelar-fgd-integrasi-nilai-islam/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "run_id": "run_35766858fd01489fbd17ee028b43cedc",
+      "panjang_jawaban": 657,
+      "url_jawaban": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "run_id": "run_dd2060c84746452e947b9b8aa2d4dea9",
+      "panjang_jawaban": 543,
+      "url_jawaban": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "run_id": "run_d3961b2500f245578f9ef248b06f1a36",
+      "panjang_jawaban": 1242,
+      "url_jawaban": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "url_tersumber": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "semua_url_tersumber": true,
+      "tanpa_url_asing": true,
+      "ada_sitasi_terverifikasi": true,
+      "lolos": true
+    }
+  ]
+}

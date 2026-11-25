@@ -1,0 +1,119 @@
+{
+  "waktu": "2026-11-25T10:14:57+00:00",
+  "fasa": "sebelum",
+  "mode": "dasar",
+  "port": 8013,
+  "data": [
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "latency": 16.2,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 3,
+      "jawaban_panjang": 510,
+      "sumber": [
+        "https://uir.ac.id/profil/"
+      ],
+      "cited": 1,
+      "token": 36333,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_c8ba522ff3f5494fa08ac4649039eba6",
+      "session_id": "BvbQw1pJ6inDADuM6UGsM49-Gc4N-trw",
+      "pesan": "",
+      "jejak": {
+        "tool": [
+          "mcp__uir__cari_uir",
+          "mcp__uir__baca_cache",
+          "mcp__uir__ambil_halaman"
+        ],
+        "deskripsi": 1,
+        "argumen_gagal": 0,
+        "pesan": 11
+      }
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "latency": 17.19,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 4,
+      "jawaban_panjang": 545,
+      "sumber": [
+        "https://uir.ac.id/profil/"
+      ],
+      "cited": 1,
+      "token": 29624,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_86f9e391ce164071ab3093902455e818",
+      "session_id": "zXxaXPNy-u7ukPuH6gQgFOHjPqzSMx0R",
+      "pesan": "",
+      "jejak": {
+        "tool": [
+          "mcp__uir__cari_uir",
+          "mcp__uir__baca_cache"
+        ],
+        "deskripsi": 1,
+        "argumen_gagal": 0,
+        "pesan": 11
+      }
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "latency": 12.13,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 3,
+      "jawaban_panjang": 434,
+      "sumber": [
+        "https://uir.ac.id/kontak/"
+      ],
+      "cited": 1,
+      "token": 24986,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_c8de3c08563a45a0a9e20e415df9a2e9",
+      "session_id": "nhlUN_DWWvWILrweObpz0rU_QchyXDNi",
+      "pesan": "",
+      "jejak": {
+        "tool": [
+          "mcp__uir__cari_uir",
+          "mcp__uir__baca_cache",
+          "mcp__uir__ambil_halaman"
+        ],
+        "deskripsi": 1,
+        "argumen_gagal": 0,
+        "pesan": 10
+      }
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "latency": 29.26,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 4,
+      "jawaban_panjang": 1017,
+      "sumber": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "cited": 1,
+      "token": 32863,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_b893202c6f8143db925fef6e9ec3aa38",
+      "session_id": "EWCpe7CCwtNYrm536sTx0HBJ6foxjt8S",
+      "pesan": "",
+      "jejak": {
+        "tool": [
+          "mcp__uir__cari_uir",
+          "mcp__uir__baca_cache",
+          "mcp__uir__ambil_halaman"
+        ],
+        "deskripsi": 1,
+        "argumen_gagal": 0,
+        "pesan": 11
+      }
+    }
+  ]
+}

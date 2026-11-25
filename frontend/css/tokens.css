@@ -1,0 +1,72 @@
+:root {
+  /* Skala ruang dan tipografi (dipertahankan agar komponen lama kompatibel). */
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px;
+  --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px;
+  --space-3xl: 96px; --space-4xl: 144px;
+
+  --text-xs: 0.75rem; --text-sm: 0.8125rem; --text-md: 1rem;
+  --text-lg: 1.125rem; --text-xl: 1.266rem; --text-2xl: 1.424rem;
+  --text-3xl: 1.602rem; --text-4xl: 1.802rem;
+  --text-display-s: 1.266rem; --text-display: 1.602rem;
+  --text-section: 1.266rem; --text-title: 1rem; --text-lead: 1.125rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 140ms; --dur-short: 260ms; --dur-long: 460ms;
+
+  /* Palet yang diminta pengguna. */
+  --navy-deep: #071426;
+  --navy-mid: #0B1F3A;
+  --royal: #164E9B;
+  --cyan: #39D5F2;
+  --ice: #F4FAFF;
+
+  --color-paper: var(--navy-deep);
+  --color-paper-2: var(--navy-mid);
+  --color-paper-3: #0e2949;
+  --color-brand: var(--royal);
+  --color-brand-deep: var(--navy-mid);
+  --color-ink: var(--ice);
+  --color-ink-2: rgba(244, 250, 255, 0.86);
+  --color-muted: rgba(244, 250, 255, 0.64);
+  --color-rule: rgba(244, 250, 255, 0.16);
+  --color-on-deep: var(--ice);
+  --color-on-deep-muted: rgba(244, 250, 255, 0.68);
+
+  --color-accent: var(--cyan);
+  --color-accent-soft: rgba(57, 213, 242, 0.16);
+  --color-accent-ink: var(--navy-deep);
+  --color-focus: var(--cyan);
+  --color-focus-on-deep: var(--cyan);
+  --color-error: #ff9a9a;
+  --color-success: #7de6c2;
+
+  /* Sistem kaca: transparan, tipis, satu bahasa visual. */
+  --glass-bg: rgba(255, 255, 255, 0.045);
+  --glass-bg-strong: rgba(255, 255, 255, 0.075);
+  --glass-bg-hover: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-border-soft: rgba(255, 255, 255, 0.075);
+  --glass-highlight: rgba(255, 255, 255, 0.22);
+  --glass-shadow: 0 20px 50px rgba(2, 10, 24, 0.32);
+  --glass-shadow-sm: 0 8px 24px rgba(2, 10, 24, 0.22);
+  --glass-blur: 18px;
+  --glass-blur-sm: 10px;
+
+  --font-display: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-outlier: var(--font-display);
+
+  --container: 1440px; --gutter: 24px; --gap-columns: 20px;
+  --sidebar-w: 268px; --topbar-h: 68px; --answer-rail: 208px;
+  --content-max: 1180px;
+  --radius-xs: 8px; --radius-card: 14px; --radius-lg: 20px;
+  --radius-pill: 999px; --rule-hair: 1px;
+  --shadow-card: var(--glass-shadow-sm);
+  --tracking-display: -0.02em;
+
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100;
+  --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400;
+  --z-toast: 500; --z-tooltip: 600;
+}

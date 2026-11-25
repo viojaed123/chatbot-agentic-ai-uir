@@ -1,0 +1,15 @@
+# Kredensial dan konfigurasi lokal. Jangan pernah commit file .env.
+.env
+.env.*
+!.env.example
+
+# Artefak Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Logging dan hasil uji lokal
+*.log
+bukti_qa/
+
+database/*.db

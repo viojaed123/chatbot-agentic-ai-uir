@@ -1,0 +1,86 @@
+{
+  "waktu": "2026-11-25T10:21:13+00:00",
+  "fasa": "setelah",
+  "mode": "konkurensi",
+  "port": 8013,
+  "data": {
+    "pekerja": 4,
+    "total": 30.57,
+    "catatan": [
+      {
+        "pertanyaan": "Apa visi UIR?",
+        "latency": 15.48,
+        "status": "berhasil",
+        "ok": true,
+        "http_gagal": "",
+        "langkah": 2,
+        "jawaban_panjang": 574,
+        "sumber": [
+          "https://uir.ac.id/profil/"
+        ],
+        "cited": 1,
+        "token": 20116,
+        "model": "deepseek-v4.1-flash:free",
+        "run_id": "run_f0eae830789548849096f727f8c087d5",
+        "session_id": "qlUkRJ4HXTw15NMDR_t3dXTJUZfCt-8y",
+        "pesan": ""
+      },
+      {
+        "pertanyaan": "Siapa rektor UIR saat ini?",
+        "latency": 19.5,
+        "status": "berhasil",
+        "ok": true,
+        "http_gagal": "",
+        "langkah": 5,
+        "jawaban_panjang": 843,
+        "sumber": [
+          "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+          "https://uir.ac.id/profil/laporan-rektor-uir/"
+        ],
+        "cited": 2,
+        "token": 32725,
+        "model": "deepseek-v4.1-flash:free",
+        "run_id": "run_ee0d398b65ff43b0835104c48bb14f7a",
+        "session_id": "B8yXscN2HufrN7EuD8QXK2oJwqz4gvc_",
+        "pesan": ""
+      },
+      {
+        "pertanyaan": "Di mana lokasi kampus utama UIR?",
+        "latency": 21.01,
+        "status": "berhasil",
+        "ok": true,
+        "http_gagal": "",
+        "langkah": 4,
+        "jawaban_panjang": 644,
+        "sumber": [
+          "https://uir.ac.id/kontak/",
+          "https://uir.ac.id/maps/"
+        ],
+        "cited": 2,
+        "token": 39089,
+        "model": "deepseek-v4.1-flash:free",
+        "run_id": "run_a4e4defc60d3490cb983b140ad3b45a4",
+        "session_id": "xLwybg1EezGx2wQOBylCL5GFYDJSsH04",
+        "pesan": ""
+      },
+      {
+        "pertanyaan": "Apa saja program studi di UIR?",
+        "latency": 30.43,
+        "status": "berhasil",
+        "ok": true,
+        "http_gagal": "",
+        "langkah": 4,
+        "jawaban_panjang": 1234,
+        "sumber": [
+          "https://uir.ac.id/program-pendidikan/"
+        ],
+        "cited": 1,
+        "token": 51906,
+        "model": "deepseek-v4.1-flash:free",
+        "run_id": "run_c7629496f7374ebc8f2860ae84b66616",
+        "session_id": "pTEdDMV49f_NIXWY_uCQ64pLjyGxSDog",
+        "pesan": ""
+      }
+    ]
+  }
+}

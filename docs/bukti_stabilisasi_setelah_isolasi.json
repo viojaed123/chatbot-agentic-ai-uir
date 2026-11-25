@@ -1,0 +1,80 @@
+{
+  "waktu": "2026-11-25T10:22:10+00:00",
+  "fasa": "setelah",
+  "mode": "isolasi",
+  "port": 8013,
+  "data": {
+    "a": {
+      "pertanyaan": "Apa visi UIR?",
+      "latency": 20.12,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 3,
+      "jawaban_panjang": 691,
+      "sumber": [
+        "https://uir.ac.id/upaya-wujudkan-visi-tahun-2041-uir-gelar-fgd-integrasi-nilai-islam/"
+      ],
+      "cited": 1,
+      "token": 27661,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_6802d0b300e14d43830a5bd925797d5e",
+      "session_id": "g4AkpOL8Gs6gCZV56CNphiPTfvkm-5uc",
+      "pesan": ""
+    },
+    "lanjutan": {
+      "pertanyaan": "Apa targets tahun visi itu?",
+      "latency": 3.43,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 0,
+      "jawaban_panjang": 346,
+      "sumber": [],
+      "cited": 0,
+      "token": 9656,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_f5a77359a5ce49389a11dab46e18df06",
+      "session_id": "g4AkpOL8Gs6gCZV56CNphiPTfvkm-5uc",
+      "pesan": ""
+    },
+    "b": {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "latency": 18.13,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 5,
+      "jawaban_panjang": 692,
+      "sumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/profil/laporan-rektor-uir/"
+      ],
+      "cited": 2,
+      "token": 32694,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_efc51ae414084fa599a3fc1e0450e3ae",
+      "session_id": "OHWolZYxodHOnt7Am0HkUhwNJBRHq-bi",
+      "pesan": ""
+    },
+    "kembali": {
+      "pertanyaan": "Apa visi UIR?",
+      "latency": 5.3,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 0,
+      "jawaban_panjang": 608,
+      "sumber": [],
+      "cited": 0,
+      "token": 10084,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_5efca5103d104da1bc438ad90e8fa450",
+      "session_id": "g4AkpOL8Gs6gCZV56CNphiPTfvkm-5uc",
+      "pesan": ""
+    },
+    "id_berbeda": true,
+    "id_sama": true,
+    "semua_berhasil": true
+  }
+}

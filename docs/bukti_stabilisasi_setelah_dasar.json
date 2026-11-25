@@ -1,0 +1,119 @@
+{
+  "waktu": "2026-11-25T10:20:21+00:00",
+  "fasa": "setelah",
+  "mode": "dasar",
+  "port": 8013,
+  "data": [
+    {
+      "pertanyaan": "Apa visi UIR?",
+      "latency": 18.36,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 2,
+      "jawaban_panjang": 671,
+      "sumber": [
+        "https://uir.ac.id/profil/"
+      ],
+      "cited": 1,
+      "token": 20259,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_c6361e4eb469460cbbd94d083f5d681a",
+      "session_id": "GBR5onvQuCSO_Zyt35DHNGP2ngaOoajs",
+      "pesan": "",
+      "jejak": {
+        "tool": [
+          "mcp__uir__cari_uir",
+          "mcp__uir__baca_cache"
+        ],
+        "deskripsi": 0,
+        "argumen_gagal": 0,
+        "pesan": 7
+      }
+    },
+    {
+      "pertanyaan": "Siapa rektor UIR saat ini?",
+      "latency": 18.77,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 5,
+      "jawaban_panjang": 906,
+      "sumber": [
+        "https://uir.ac.id/assoc-prof-dr-admiral-s-h-m-h-terima-penghargaan-jmsi-sebagai-rektor-muda-terbaik/",
+        "https://uir.ac.id/bersama-kita-bisa-pesan-rektor-uir-saat-pelantikan-dekan-dan-direktur-pascasarjana/"
+      ],
+      "cited": 2,
+      "token": 33853,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_f2cac7e3b41f428daa251083a6d61354",
+      "session_id": "F44gvakkyxOfEdgh8U0t99gtDYhk79vF",
+      "pesan": "",
+      "jejak": {
+        "tool": [
+          "mcp__uir__cari_uir",
+          "mcp__uir__baca_cache",
+          "mcp__uir__ambil_halaman"
+        ],
+        "deskripsi": 0,
+        "argumen_gagal": 0,
+        "pesan": 11
+      }
+    },
+    {
+      "pertanyaan": "Di mana lokasi kampus utama UIR?",
+      "latency": 22.46,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 2,
+      "jawaban_panjang": 675,
+      "sumber": [
+        "https://uir.ac.id/kontak/",
+        "https://uir.ac.id/maps/"
+      ],
+      "cited": 2,
+      "token": 19807,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_1d1148df7c934f5cb7d881b8c9cc9491",
+      "session_id": "6IWdLiLc_EUO7U_z5Wo3Auu8E2cx0-q6",
+      "pesan": "",
+      "jejak": {
+        "tool": [
+          "mcp__uir__cari_uir",
+          "mcp__uir__baca_cache"
+        ],
+        "deskripsi": 0,
+        "argumen_gagal": 0,
+        "pesan": 7
+      }
+    },
+    {
+      "pertanyaan": "Apa saja program studi di UIR?",
+      "latency": 18.42,
+      "status": "berhasil",
+      "ok": true,
+      "http_gagal": "",
+      "langkah": 2,
+      "jawaban_panjang": 891,
+      "sumber": [
+        "https://uir.ac.id/program-pendidikan/"
+      ],
+      "cited": 1,
+      "token": 21978,
+      "model": "deepseek-v4.1-flash:free",
+      "run_id": "run_9472dbe0cf2441e5815cd161fe934f55",
+      "session_id": "aUlLsBSwNLCfTfOvO6mae-44_xksCgug",
+      "pesan": "",
+      "jejak": {
+        "tool": [
+          "mcp__uir__cari_uir",
+          "mcp__uir__baca_cache"
+        ],
+        "deskripsi": 0,
+        "argumen_gagal": 0,
+        "pesan": 7
+      }
+    }
+  ]
+}
